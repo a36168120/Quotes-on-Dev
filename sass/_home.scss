@@ -1,0 +1,32 @@
+/* Home page */ 
+
+body {
+    background-color:$back-gd;
+    @include container;
+}
+
+p {
+    color: white;
+}
+
+.site-content {
+    width: 100%;
+    padding-top: 50px;
+    .content-area {
+        text-align: center;
+        .site-main {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .center-content article {
+                padding: 0 70px;
+            }            
+            i {
+                width: 25%; 
+            }
+            i::before {
+                color: $green;
+            }
+        }
+    }
+}

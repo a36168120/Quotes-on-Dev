@@ -593,3 +593,42 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
+/* Home page */
+body {
+  background-color: #222222;
+  max-width: 1080px;
+  margin: 0 auto;
+  width: 100%; }
+
+p {
+  color: white; }
+
+.site-content {
+  width: 100%;
+  padding-top: 50px; }
+  .site-content .content-area {
+    text-align: center; }
+    .site-content .content-area .site-main {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .site-content .content-area .site-main .center-content article {
+        padding: 0 70px; }
+      .site-content .content-area .site-main i {
+        width: 25%; }
+      .site-content .content-area .site-main i::before {
+        color: #00cc00; }
+
+/* Header */
+.site-logo {
+  padding-top: 50px;
+  text-align: center; }
+  .site-logo img {
+    width: 700px; }
