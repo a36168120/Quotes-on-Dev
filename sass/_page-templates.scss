@@ -4,4 +4,69 @@
 
 /* All Archives Page */
 
+.entry-header {
+    text-align: start;
+    margin-left: 90px;
+    padding-bottom: 20px;
+}
+
+.post-archives {
+    h2 {
+        text-align: start;
+        margin-left: 90px;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            padding-right: 20px;
+            padding-bottom: 20px;
+            a {
+                text-decoration: none;
+                color: $green;
+            }
+        }
+    }
+}
+
+.category-archives {
+    h2 {
+        text-align: start;
+        margin-left: 90px;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            padding-right: 20px;
+            padding-bottom: 20px;
+            a {
+                text-decoration: none;
+                color: $green;
+            }
+        }
+    }
+}
+
+.tag-archives {
+    h2 {
+        text-align: start;
+        margin-left: 90px;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            padding-right: 20px;
+            padding-bottom: 20px;
+            a {
+                text-decoration: none;
+                color: $green;
+            }
+        }
+    }
+}
 /* Submit a Quote Page */

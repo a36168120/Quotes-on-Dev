@@ -10,16 +10,17 @@ p {
     font-size: 2rem;
 }
 
-.site-content {
-    width: 100%;
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+
+.content-area {
     padding-top: 50px;
-    .content-area {
-        display: flex;
-        flex-direction: row;
-        .center-content {
-            min-width: 800px;
-            margin: 0 20px;
-            text-align: center;
+    display: flex;
+    flex-direction: row;
+    .site-main {
+        @include center-container;
+        .center-content{
             article {
                 text-align: start;
             }
@@ -33,22 +34,23 @@ p {
                 font-size: 20px;
             }
         }
-        &::before {
-            font-family: "FontAwesome"; 
-            font-weight: 400; 
-             content: "\f10d";
-             font-size: 150px;
-             color: $green;
+    }
+    &::before {
+        font-family: "FontAwesome"; 
+        font-weight: 400; 
+        content: "\f10d";
+        font-size: 125px;
+        color: $green;
         }
         &::after {
-            font-family: "FontAwesome"; 
-            font-weight: 400; 
-             content: "\f10e";
-             font-size: 150px;
-             color: $green;
-        }
+        font-family: "FontAwesome"; 
+        font-weight: 400; 
+        content: "\f10e";
+        font-size: 125px;
+        color: $green;
     }
 }
+
 
 .entry-meta {
     display: flex;

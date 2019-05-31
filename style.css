@@ -592,6 +592,65 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* All Archives Page */
+.entry-header {
+  text-align: start;
+  margin-left: 90px;
+  padding-bottom: 20px; }
+
+.post-archives h2 {
+  text-align: start;
+  margin-left: 90px; }
+
+.post-archives ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .post-archives ul li {
+    padding-right: 20px;
+    padding-bottom: 20px; }
+    .post-archives ul li a {
+      text-decoration: none;
+      color: #00cc00; }
+
+.category-archives h2 {
+  text-align: start;
+  margin-left: 90px; }
+
+.category-archives ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .category-archives ul li {
+    padding-right: 20px;
+    padding-bottom: 20px; }
+    .category-archives ul li a {
+      text-decoration: none;
+      color: #00cc00; }
+
+.tag-archives h2 {
+  text-align: start;
+  margin-left: 90px; }
+
+.tag-archives ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .tag-archives ul li {
+    padding-right: 20px;
+    padding-bottom: 20px; }
+    .tag-archives ul li a {
+      text-decoration: none;
+      color: #00cc00; }
+
 /* Submit a Quote Page */
 /* Home page */
 body {
@@ -604,44 +663,46 @@ p {
   color: white;
   font-size: 2rem; }
 
-.site-content {
-  width: 100%;
-  padding-top: 50px; }
-  .site-content .content-area {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-    .site-content .content-area .center-content {
-      min-width: 800px;
-      margin: 0 20px;
-      text-align: center; }
-      .site-content .content-area .center-content article {
-        text-align: start; }
-      .site-content .content-area .center-content button {
-        padding: 15px 30px;
-        color: #00cc00;
-        background-color: #222222;
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        text-shadow: none;
-        border: 2px solid #00cc00;
-        font-size: 20px; }
-    .site-content .content-area::before {
-      font-family: "FontAwesome";
-      font-weight: 400;
-      content: "\f10d";
-      font-size: 150px;
-      color: #00cc00; }
-    .site-content .content-area::after {
-      font-family: "FontAwesome";
-      font-weight: 400;
-      content: "\f10e";
-      font-size: 150px;
-      color: #00cc00; }
+h1, h2, h3, h4, h5, h6 {
+  color: white; }
+
+.content-area {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .content-area .site-main {
+    min-width: 800px;
+    max-width: 800px;
+    margin: 0 15px;
+    text-align: center; }
+    .content-area .site-main .center-content article {
+      text-align: start; }
+    .content-area .site-main .center-content button {
+      padding: 15px 30px;
+      color: #00cc00;
+      background-color: #222222;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      text-shadow: none;
+      border: 2px solid #00cc00;
+      font-size: 20px; }
+  .content-area::before {
+    font-family: "FontAwesome";
+    font-weight: 400;
+    content: "\f10d";
+    font-size: 125px;
+    color: #00cc00; }
+  .content-area::after {
+    font-family: "FontAwesome";
+    font-weight: 400;
+    content: "\f10e";
+    font-size: 125px;
+    color: #00cc00; }
 
 .entry-meta {
   display: -webkit-box;
