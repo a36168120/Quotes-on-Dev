@@ -18,8 +18,6 @@ get_header(); ?>
 					</header>
 				<?php endif; ?>
 
-				<i class="fas fa-quote-left fa-7x"></i>
-
 				<div class="center-content">
 					<?php /* Start the Loop */ ?>
 					<?php while ( have_posts() ) : the_post(); ?>
@@ -28,8 +26,6 @@ get_header(); ?>
 					
 					<?php endwhile; ?>
 				</div>
-
-				<i class="fas fa-quote-right fa-7x"></i>
 
 				<?php else : ?>
 

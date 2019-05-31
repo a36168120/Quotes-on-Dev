@@ -7,8 +7,6 @@
 
 $source = get_post_meta( get_the_ID(), '_qod_quote_source', true);
 $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true);
-// var_dump($source);
-// var_dump($source_url);
 
 ?>
 
