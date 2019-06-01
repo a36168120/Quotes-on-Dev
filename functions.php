@@ -60,15 +60,19 @@ function qod_scripts() {
 
 	// TODO add Font Awesome wp_enqueue_style
 	// try adding the quotes with CSS ::after and ::before
-	// TODO add your own script.js file wp_enqueue_style
+
 	wp_enqueue_style('font-awesome', '//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
+	// TODO add your own script.js file wp_enqueue_scripts
+	wp_enqueue_script('qod-scripts', get_template_directory_uri() . '/build/js/scripts.min.js', array('jquery'), '', true);
+	
 	wp_localize_script("qod-scripts", "api_vars", array(
 		"rest_url" => rest_url(),
-		"wpapi_nonce" => wp_create_nonce("wp_rest"),
-		"post_id" => get_the_ID()
+		"nonce" => wp_create_nonce("wp_rest"),
+		"post_id" => get_the_ID(),
+		"success" => 'Thanks, your quote submission was received',
+		"fail" => 'Sorry! something went wrong, please try again'
 	));
-
 
 	wp_enqueue_script( 'qod-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'qod-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
