@@ -4,11 +4,6 @@
 
         let lastPage = '';
 
-        // Events
-        // $('#new-quote-button').on('click', getRandomQuote);
-        // $('#quote-submission-form').on('submit', postQuote);
-
-
         // Get request
         $('#new-quote-button').on('click', getRandomQuote);
         function getRandomQuote (event) {
@@ -43,10 +38,16 @@
             console.log('form submitted');
 
             const quoteAuthor = $('#quote-author').val();
+            const quoteContent = $('#quote-content').val();
+            const quoteSource = $('#quote-source').val();
+            const quoteSourceUrl = $('quote-source-url').val();
 
-            if (quoteAuthor !== '') {
-                // check if the field is empty
+            if (quoteAuthor !== '' && quoteContent !== '') {
                 postAjax();
+            } else if (quoteAuthor == '') {
+                alert('Please fill in name for author!')
+            } else if (quoteContent == '') {
+                alert('Please fill in quote content')
             } else {
                 console.log ('no input');
             }
@@ -58,21 +59,21 @@
                     data: {
                         // TODO use the form input .val() for the title, content
                         title: quoteAuthor,
-                        content: 'The most amazing quote by Gordon Ramsey',
-                        post_status: 'pending'
-                        // _qod_quote_source:
-                        // _qod_quote_source_url:
+                        content: quoteContent,
+                        post_status: 'pending',
+                        _qod_quote_source: quoteSource,
+                        _qod_quote_source_url: quoteSourceUrl
                     },
                     beforeSend: function(xhr) {
                         xhr.setRequestHeader('X-WP-Nonce', api_vars.nonce);
                     }
                 })
                 .done(function() {
-                    console.log('yay');
+                    console.log('quote submit success');
                     $('#quote-submission-form').slideUp(2000);
                 })
                 .fail(function() {
-                    console.log('nooo');
+                    console.log('quote submit fail');
                 });
 
             } // End of Post Ajax

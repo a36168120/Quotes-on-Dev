@@ -1,0 +1,39 @@
+/* Submit page */ 
+
+.quote-submission-wrapper {
+    text-align: start;
+    .submit-author {
+        display: flex;
+        flex-direction: column;
+        @include submit-container;
+    }
+    .submit-quote {
+        padding: 10px 0px;
+        label {
+            color: white;
+            padding: 10px 0px;
+        }
+        textarea {
+            background-color: $back-gd;
+            border: 2px solid $green;
+        }
+    }
+    .submit-source {
+        display: flex;
+        flex-direction: column;
+        @include submit-container;
+    }
+    .submit-source-url {
+        display: flex;
+        flex-direction: column;
+        @include submit-container;
+    }
+    input {
+        padding: 10px 20px;
+        color: $green;
+        background-color: $back-gd;
+        box-shadow: none;
+        text-shadow: none;
+        border: 2px solid $green;
+    }
+}

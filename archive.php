@@ -12,20 +12,22 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<header class="archive-page-header">
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 				?>
 			</header><!-- .page-header -->
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+			<div class="archive-center-content">
+				<?php /* Start the Loop */ ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+					<?php
+						get_template_part( 'template-parts/content' );
+					?>
 
-			<?php endwhile; ?>
+				<?php endwhile; ?>
+			</div>
 
 			<?php the_posts_navigation(); ?>
 

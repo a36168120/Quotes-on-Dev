@@ -221,6 +221,34 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Exo';
+  src: url("../../assets/fonts/Exo-Light.eot");
+  src: url("../../assets/fonts/Exo-Light.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Exo-Light.woff2") format("woff2"), url("../../assets/fonts/Exo-Light.woff") format("woff"), url("../../assets/fonts/Exo-Light.ttf") format("truetype"), url("../../assets/fonts/Exo-Light.svg#Exo-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../assets/fonts/Exo-MediumItalic.eot");
+  src: url("../../assets/fonts/Exo-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Exo-MediumItalic.woff2") format("woff2"), url("../../assets/fonts/Exo-MediumItalic.woff") format("woff"), url("../../assets/fonts/Exo-MediumItalic.ttf") format("truetype"), url("../../assets/fonts/Exo-MediumItalic.svg#Exo-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../assets/fonts/Exo-Medium.eot");
+  src: url("../../assets/fonts/Exo-Medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Exo-Medium.woff2") format("woff2"), url("../../assets/fonts/Exo-Medium.woff") format("woff"), url("../../assets/fonts/Exo-Medium.ttf") format("truetype"), url("../../assets/fonts/Exo-Medium.svg#Exo-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../assets/fonts/Exo-LightItalic.eot");
+  src: url("../../assets/fonts/Exo-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Exo-LightItalic.woff2") format("woff2"), url("../../assets/fonts/Exo-LightItalic.woff") format("woff"), url("../../assets/fonts/Exo-LightItalic.ttf") format("truetype"), url("../../assets/fonts/Exo-LightItalic.svg#Exo-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -651,17 +679,27 @@ object {
       text-decoration: none;
       color: #00cc00; }
 
+.archive-page-header {
+  text-align: start;
+  border-bottom: 1px dotted white; }
+
+.archive-center-content article {
+  text-align: start;
+  border-bottom: 1px dotted white; }
+
 /* Submit a Quote Page */
 /* Home page */
 body {
+  font-family: "Exo";
+  font-weight: 300;
+  font-style: normal;
   background-color: #222222;
   max-width: 1080px;
   margin: 0 auto;
   width: 100%; }
 
 p {
-  color: white;
-  font-size: 2rem; }
+  color: white; }
 
 h1, h2, h3, h4, h5, h6 {
   color: white; }
@@ -678,10 +716,12 @@ h1, h2, h3, h4, h5, h6 {
   .content-area .site-main {
     min-width: 800px;
     max-width: 800px;
-    margin: 0 15px;
+    margin: 0 30px;
     text-align: center; }
     .content-area .site-main .center-content article {
       text-align: start; }
+      .content-area .site-main .center-content article p {
+        font-size: 2rem; }
     .content-area .site-main .center-content button {
       padding: 15px 30px;
       color: #00cc00;
@@ -770,3 +810,75 @@ h1, h2, h3, h4, h5, h6 {
     .site-info ul a {
       text-decoration: none;
       color: #00cc00; }
+
+/* Submit page */
+.quote-submission-wrapper {
+  text-align: start; }
+  .quote-submission-wrapper .submit-author {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px 0px; }
+    .quote-submission-wrapper .submit-author label {
+      color: white;
+      padding: 10px 0px; }
+    .quote-submission-wrapper .submit-author input {
+      background-color: #222222;
+      border: 2px solid #00cc00;
+      width: 500px; }
+  .quote-submission-wrapper .submit-quote {
+    padding: 10px 0px; }
+    .quote-submission-wrapper .submit-quote label {
+      color: white;
+      padding: 10px 0px; }
+    .quote-submission-wrapper .submit-quote textarea {
+      background-color: #222222;
+      border: 2px solid #00cc00; }
+  .quote-submission-wrapper .submit-source {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px 0px; }
+    .quote-submission-wrapper .submit-source label {
+      color: white;
+      padding: 10px 0px; }
+    .quote-submission-wrapper .submit-source input {
+      background-color: #222222;
+      border: 2px solid #00cc00;
+      width: 500px; }
+  .quote-submission-wrapper .submit-source-url {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px 0px; }
+    .quote-submission-wrapper .submit-source-url label {
+      color: white;
+      padding: 10px 0px; }
+    .quote-submission-wrapper .submit-source-url input {
+      background-color: #222222;
+      border: 2px solid #00cc00;
+      width: 500px; }
+  .quote-submission-wrapper input {
+    padding: 10px 20px;
+    color: #00cc00;
+    background-color: #222222;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none;
+    border: 2px solid #00cc00; }
+
+/* 404 page */
+.error-404 {
+  text-align: start; }

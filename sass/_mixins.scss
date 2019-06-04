@@ -14,6 +14,19 @@
 @mixin center-container {
 	min-width: 800px;
 	max-width: 800px;
-	margin: 0 15px;
+	margin: 0 30px;
 	text-align: center;
+}
+
+@mixin submit-container {
+	padding: 10px 0px;
+	label {
+		color: white;
+		padding: 10px 0px;
+	}
+	input {
+		background-color: $back-gd;
+		border: 2px solid $green;
+		width: 500px;
+	}
 }

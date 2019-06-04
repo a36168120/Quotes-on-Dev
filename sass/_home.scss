@@ -1,13 +1,15 @@
 /* Home page */ 
 
 body {
+    font-family: "Exo";
+    font-weight: 300;
+    font-style: normal;
     background-color:$back-gd;
     @include container;
 }
 
 p {
     color: white;
-    font-size: 2rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -23,6 +25,9 @@ h1, h2, h3, h4, h5, h6 {
         .center-content{
             article {
                 text-align: start;
+                p {
+                    font-size: 2rem;
+                }
             }
             button {
                 padding: 15px 30px;
